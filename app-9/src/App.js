@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import routes from './routes'
 import './App.css';
+import {HashRouter, Link} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
+      <HashRouter>
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <br/>
+      <Link to="/">Home</Link>
+      <Link to="/Signup">Signup</Link>
+      <Link to="/Details">Details</Link>
+       {routes}
       </div>
+      </HashRouter>
     );
   }
 }
