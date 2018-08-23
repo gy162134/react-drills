@@ -2,23 +2,24 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.proj{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  width: 90%;
+  justify-content: center;
+}
+h1{
+  width:100%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+@keyframes fadein{
+from{opacity:0;}
+to{opacity: 1;}
 }
 
-.App-intro {
-  font-size: large;
+.detail_img{
+animation: fadein 2s;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+

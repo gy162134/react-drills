@@ -19,10 +19,11 @@ render(){
     console.log(this.state.character)
     return (
         <div>
-            <div>Name: {this.state.character.name}</div>
-            <div>Status: {this.state.character.status}</div>
-            <div>Gender: {this.state.character.gender}</div>
-            <div>Species: {this.state.character.species}</div>
+            <img className='detail_img' src={this.state.character.image} alt=""></img>
+            <div>NAME: {this.state.character.name}</div>
+            <div>STATUS: {this.state.character.status}</div>
+            <div>GENDER: {this.state.character.gender}</div>
+            <div>SPECIES: {this.state.character.species}</div>
         </div>
     )
 }

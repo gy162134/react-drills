@@ -24,14 +24,14 @@ class People extends Component{
      <div  key={char.id}>
            <Link to={`/details/${char.id}`} > <img src={char.image} alt={char.name}/></Link>
             <div>
-            <h6><span>{char.name}</span>({char.species})</h6>
-            <p>{char.origin.name}</p>
-       </div>
+            <h6>{char.name}</h6>
+            </div>
     </div>
     )})
         return(
-            <div>
+            <div className = 'proj'>
             <h1>Characters</h1>
+            <br/>
             {char}
             </div>
         )
